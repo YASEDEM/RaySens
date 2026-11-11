@@ -1,0 +1,5 @@
+.build/
+.DS_Store
+work/
+outputs/
+Resources/DisableTurboBoost.64bits.kext/Contents/Info.plist~
