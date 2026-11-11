@@ -42,7 +42,7 @@ open .build/RaySens.app
 
 ## Beta download
 
-[Download RaySens 0.2.0 Beta 1 for Intel x86_64 macOS](https://github.com/YASEDEM/RaySens/raw/refs/tags/v0.2.0-beta.1/release-assets/RaySens-macOS-x86_64-0.2.0-beta.1.zip). The app is ad-hoc signed and not notarized.
+[Download RaySens 0.2.0 Beta 2 for Intel x86_64 macOS](https://github.com/YASEDEM/RaySens/raw/refs/heads/main/release-assets/RaySens-macOS-x86_64-0.2.0-beta.2.zip). The app is ad-hoc signed and not notarized.
 
 Choose **Open RaySens at login** in the popover to start the menu bar app after sign-in.
 
@@ -54,7 +54,7 @@ An observed live frequency above nominal means turbo frequency occurred during t
 
 ## Turbo Boost control
 
-RaySens bundles the x86_64 `DisableTurboBoost.64bits.kext` from [Turbo Boost Switcher](https://github.com/rugarciap/Turbo-Boost-Switcher). Its GPLv2 license and third-party notice are included in this repository. Disabling Turbo Boost asks macOS for administrator authorization to load the extension; enabling it unloads the extension. RaySens checks whether the extension is loaded before reporting the state.
+RaySens redistributes the x86_64 `DisableTurboBoost.64bits.kext` executable found in [Turbo Boost Switcher](https://github.com/rugarciap/Turbo-Boost-Switcher). The Turbo Boost Switcher project is GPLv2-licensed. The underlying kext source is from [nanoant/DisableTurboBoost.kext](https://github.com/nanoant/DisableTurboBoost.kext) and carries an MIT notice. RaySens includes both notices and the corresponding kext source files in the repository and app bundle; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). RaySens does not include the Turbo Boost Switcher app code. Disabling Turbo Boost asks macOS for administrator authorization to load the extension; enabling it unloads the extension. RaySens checks whether the extension is loaded before reporting the state.
 
 **Disable Turbo on system startup** installs an optional LaunchDaemon that loads the same extension during macOS startup, before a user signs in. This only applies after macOS begins loading and does not affect BIOS or firmware startup. Turn the option off to remove the LaunchDaemon.
 
@@ -66,4 +66,4 @@ The beta has been tested only on an Intel Hackintosh with an **Intel Core i7-118
 
 ## Third-party code
 
-The bundled Turbo Boost extension is derived from the [Turbo Boost Switcher](https://github.com/rugarciap/Turbo-Boost-Switcher) project and is distributed under GPLv2. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [Resources/ThirdParty-GPLv2.txt](Resources/ThirdParty-GPLv2.txt).
+The bundled Turbo Boost extension's binary comes from the [Turbo Boost Switcher](https://github.com/rugarciap/Turbo-Boost-Switcher) app bundle; its underlying source and MIT notice are from [nanoant/DisableTurboBoost.kext](https://github.com/nanoant/DisableTurboBoost.kext). See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the included GPLv2 and MIT notices.
