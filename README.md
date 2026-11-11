@@ -40,6 +40,10 @@ To create a launchable app bundle:
 open .build/RaySens.app
 ```
 
+## Beta download
+
+[Download RaySens 0.2.0 Beta 1 for Intel x86_64 macOS](https://github.com/YASEDEM/RaySens/raw/refs/tags/v0.2.0-beta.1/release-assets/RaySens-macOS-x86_64-0.2.0-beta.1.zip). The app is ad-hoc signed and not notarized.
+
 Choose **Open RaySens at login** in the popover to start the menu bar app after sign-in.
 
 ## Monitoring and permissions
