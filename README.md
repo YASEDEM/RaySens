@@ -42,6 +42,8 @@ open .build/RaySens.app
 
 ## Beta download
 
+**Beta 1 has been withdrawn and should not be redistributed.** Use the corrected Beta 2 archive below.
+
 [Download RaySens 0.2.0 Beta 2 for Intel x86_64 macOS](https://github.com/YASEDEM/RaySens/raw/refs/heads/main/release-assets/RaySens-macOS-x86_64-0.2.0-beta.2.zip). The app is ad-hoc signed and not notarized.
 
 Choose **Open RaySens at login** in the popover to start the menu bar app after sign-in.
